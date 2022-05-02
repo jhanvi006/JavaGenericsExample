@@ -14,7 +14,16 @@ public class FindMaxValueUsingGenerics {
             max = num3;
         System.out.println("Maximum of "+num1+", "+num2+", "+num3+" is "+max);
     }
+    public static void findMaxValue(Float num1, Float num2, Float num3){
+        Float max = num1;
+        if (num2.compareTo(max)>0)
+            max = num2;
+        if (num3.compareTo(max)>0)
+            max = num3;
+        System.out.println("Maximum of "+num1+", "+num2+", "+num3+" is "+max);
+    }
     public static void main(String[] args) {
         FindMaxValueUsingGenerics.findMaxValue(20, 12, 15);
+        FindMaxValueUsingGenerics.findMaxValue(20.3f, 22.1f, 15.9f);
     }
 }
